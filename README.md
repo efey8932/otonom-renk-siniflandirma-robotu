@@ -1,4 +1,5 @@
 Otonom Renk Sınıflandırma ve Kontrol Robotu
+
 Bu proje, ROS 2 tabanlı bir robotik kolun simülasyon ortamında nesneleri renklerine göre tespit edip sınıflandırmasını sağlayan uçtan uca bir otonom sistem mimarisidir. Proje; bilgisayarlı görü, hareket planlama ve fiziksel simülasyon disiplinlerini bir araya getirmektedir.
 
 🚀 Proje Genel Bakışı
@@ -23,23 +24,3 @@ otonom_kontrol: Robotun hareket mantığını ve MoveIt 2 entegrasyonunu yönete
 otonom_baslatma: Tüm sistemi (simülasyon, kontrolcü ve görüntü işleme) tek bir komutla başlatan launch dosyalarını barındırır.
 
 panda_description: Robotun URDF/Xacro formatındaki 3D modellerini ve görsel tanımlamalarını içerir.
-
-🛠️ Kurulum ve Çalıştırma
-Çalışma Alanını Derleme:
-
-Bash
-cd ~/ros2_ws
-colcon build
-source install/setup.bash
-Sistemi Başlatma:
-
-Bash
-ros2 launch otonom_baslatma pick_and_place.launch.py
-🎥 Özellikler
-[x] Gerçek zamanlı renk tespiti (Kırmızı, Yeşil, Mavi).
-
-[x] Dinamik yörünge planlama ve engelden sakınma.
-
-[x] Gazebo üzerinde gerçek zamanlı fizik simülasyonu.
-
-[x] Tamamen modüler ve özelleştirilebilir ROS 2 düğüm yapısı.
