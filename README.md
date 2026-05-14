@@ -50,7 +50,7 @@ Proje, genişletilebilir ve bakımı kolay (maintainable) olacak şekilde katman
    cd ~/ros2_ws/src
    # Depoyu bu klasöre klonlayın veya dosyalarınızın burada olduğundan emin olun
 
-### Bağımlılıkları Çözün ve Derleyin
+2. ### Bağımlılıkları Çözün ve Derleyin
 ```bash
 cd ~/ros2_ws
 rosdep install --from-paths src --ignore-src -r -y
