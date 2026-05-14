@@ -55,9 +55,3 @@ Proje, genişletilebilir ve bakımı kolay (maintainable) olacak şekilde katman
 cd ~/ros2_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install
-
-
-
-   
-   
-   
