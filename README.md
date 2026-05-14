@@ -1,9 +1,5 @@
-# 🤖 ROS 2 Tabanlı Otonom Renk Sınıflandırma ve Kontrol Robotu
+# 🤖 Otonom Renk Sınıflandırma Robotu
 
-[![ROS 2](https://img.shields.io/badge/ROS%202-Humble%20%2F%20Foxy-blue?logo=ros&logoColor=white)](https://docs.ros.org/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?logo=opencv&logoColor=white)](https://opencv.org/)
-[![MoveIt 2](https://img.shields.io/badge/MoveIt-2-orange)](https://moveit.ros.org/)
-[![Gazebo](https://img.shields.io/badge/Gazebo-Simulation-red?logo=gazebo&logoColor=white)](https://gazebosim.org/)
 
 Bu proje; bilgisayarlı görü (computer vision), dinamik hareket planlaması (motion planning) ve fizik tabanlı simülasyon süreçlerini bir araya getiren gelişmiş bir **ROS 2** otonom robotik sistem mimarisidir. 7 eksenli bir endüstriyel robotik kol, entegre kamera sensörü üzerinden aldığı görüntüleri gerçek zamanlı işleyerek nesneleri renklerine göre ayırt eder ve otonom olarak sınıflandırır.
 
@@ -11,9 +7,11 @@ Bu proje; bilgisayarlı görü (computer vision), dinamik hareket planlaması (m
 
 ## 📺 Proje Tanıtım Videosu & Simülasyon
 
-> **Sürükle-Bırak Alanı:** Bilgisayarındaki simülasyon video dosyasını (.mp4) tam olarak bu satırın altına sürükleyip bırakarak GitHub sunucularına yükleyebilirsin.
 
-*(Videonuzu buraya sürükleyip bırakın)*
+
+https://github.com/user-attachments/assets/6bcde89f-9c5a-4aef-98ef-0162caa277cf
+
+
 
 ---
 
@@ -51,3 +49,20 @@ Proje, genişletilebilir ve bakımı kolay (maintainable) olacak şekilde katman
    ```bash
    cd ~/ros2_ws/src
    # Depoyu bu klasöre klonlayın veya dosyalarınızın burada olduğundan emin olun
+
+### Bağımlılıkları Çözün ve Derleyin
+```bash
+cd ~/ros2_ws
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+
+
+
+
+
+
+
+
+   
+   
+   
